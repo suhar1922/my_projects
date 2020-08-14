@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Су-е-фа</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/nozhnithee_player.svg">
+  </head>
+  <body>
+    <div class="text_area">
+      <div id="text">0_0</div>
+      <div class="score_area">
+        <div class="square">
+          <div id="player_score">Счёт: 0</div>
+        </div>
+        <div class="square">
+          <div id="AI_score">Счёт: 0</div>
+        </div>
+      </div>
+    </div>
+    <div class="game_area">
+      <div class="player_UI">
+        <div class="player_display">
+          <img id="player_img">
+        </div>
+        <div class="player_choice">
+          <div class="buttons">
+            <button type="button" class="button" onclick="choice_kam()">Камень</button>
+            <button type="button" class="button" onclick="choice_nozh()">Ножницы</button>
+            <button type="button" class="button" onclick="choice_bum()">Бумага</button>
+          </div>
+        </div>
+      </div>
+      <div class="AI_UI">
+        <div class="AI_display">
+          <img id="AI_img">
+        </div>
+        <div class="AI_no_choice"></div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
